@@ -1,0 +1,26 @@
+.button-item {
+	float: right;
+	font-size: 30px;
+	border-style: none;
+	width: 50px;
+	cursor: pointer;
+	background-color: red;
+	color: white;
+}
+
+li {
+	margin-top: 10px;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+.finish {
+	color: red;
+	font-style: italic;
+	text-decoration: line-through;
+	text-decoration-color: black;
+}
+
+.unfinish {
+	color: black;
+}
