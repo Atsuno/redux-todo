@@ -4,6 +4,7 @@ import './assets/style.css'
 import InputTodo from '../InputTodo'
 import TodoList from '../TodoList'
 import ShowTodo from '../ShowTodo'
+import SearchTodo from '../SearchTodo'
 
 const App = () => (
   <div className="App">
@@ -14,6 +15,7 @@ const App = () => (
     <div className="App-intro">
       vCode Dev-Tools<br /><br />
       <InputTodo />
+      <SearchTodo />
       <ShowTodo />
       <TodoList />
     </div>

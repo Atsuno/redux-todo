@@ -6,6 +6,9 @@ const TYPE = {
   },
   FILTER: {
     TODO: 'FILTER_TODO'
+  },
+  SEARCH: {
+    TODO: 'SEARCH_TODO'
   }
 }
 

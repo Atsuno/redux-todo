@@ -16,7 +16,7 @@ TodoItem.propTypes = {
 }
 TodoItem.defaultProps = {
   id: 1,
-  text: 'text',
+  text: 'text 1',
   finish: true
 }
 export default TodoItem
