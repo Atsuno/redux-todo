@@ -4,18 +4,7 @@ import showTodo from './reducers/showTodo'
 import searchTodo from './reducers/searchTodo'
 
 export const initialStore = {
-  todos: [
-    {
-      id: 1,
-      text: 'text 1',
-      finish: false
-    },
-    {
-      id: 2,
-      text: 'adsfg',
-      finish: true
-    }
-  ],
+  todos: [],
   showTodo: {
     finish: true,
     unfinish: true

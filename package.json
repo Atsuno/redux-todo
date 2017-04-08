@@ -2,7 +2,7 @@
   "name": "redux-todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://atsuno.github.io/redux-todo1",
+  "homepage": "https://atsuno.github.io/redux-todo",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "connected-react-router": "^4.0.0",
