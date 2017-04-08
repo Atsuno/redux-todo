@@ -2,11 +2,11 @@ import React, { PropTypes } from 'react'
 import TodoItem from '../TodoItem'
 import './assets/style.css'
 
-const TodoList = ({ todos, filter, searchTodo }) => (
+const TodoList = ({ todos, showTodo, searchTodo }) => (
   <ul className="ul-list">
     {
       todos.filter(todo => todo.text.includes(searchTodo.text))
-        .filter(todo => (todo.finish && filter.finish) || (!todo.finish && filter.unfinish))
+        .filter(todo => (todo.finish && showTodo.finish) || (!todo.finish && showTodo.unfinish))
         .map(todo => <TodoItem key={todo.id} {...todo} />)
     }
   </ul>
@@ -19,9 +19,10 @@ TodoList.propTypes = {
       finish: PropTypes.bool
     })
   ),
-  filter: PropTypes.objectOf(
-    PropTypes.bool.isRequired
-  ).isRequired,
+  showTodo: PropTypes.shape({
+    finish: PropTypes.bool,
+    unfinish: PropTypes.bool
+  }),
   searchTodo: PropTypes.shape({
     text: PropTypes.string
   })
@@ -34,6 +35,10 @@ TodoList.defaultProps = {
       finish: false
     })
   ),
+  showTodo: PropTypes.shape({
+    finish: false,
+    unfinish: true
+  }),
   searchTodo: PropTypes.shape({
     text: ''
   })

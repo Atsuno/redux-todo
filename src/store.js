@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import todos from './reducers/todos'
-import filter from './reducers/filter'
+import showTodo from './reducers/showTodo'
 import searchTodo from './reducers/searchTodo'
 
 export const initialStore = {
@@ -16,7 +16,7 @@ export const initialStore = {
       finish: true
     }
   ],
-  filter: {
+  showTodo: {
     finish: true,
     unfinish: true
   },
@@ -27,7 +27,7 @@ export const initialStore = {
 
 const rootReducer = combineReducers({
   todos,
-  filter,
+  showTodo,
   searchTodo
 })
 

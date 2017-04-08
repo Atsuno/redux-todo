@@ -3,7 +3,7 @@ import TodoList from './component'
 
 const mapStateToProps = state => ({
   todos: state.todos,
-  filter: state.filter,
+  showTodo: state.showTodo,
   searchTodo: state.searchTodo
 })
 

@@ -4,8 +4,8 @@ const TYPE = {
     REMOVE: 'TODOS_REMOVE',
     TOGGLE: 'TODOS_TOGGLE'
   },
-  FILTER: {
-    TODO: 'FILTER_TODO'
+  SHOW: {
+    TODO: 'SHOW_TODO'
   },
   SEARCH: {
     TODO: 'SEARCH_TODO'

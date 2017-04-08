@@ -1,16 +1,16 @@
 import { initialStore } from '../store'
 import TYPE from '../actions/types'
 
-export default (filter = initialStore.filter, action) => {
+export default (showTodo = initialStore.showTodo, action) => {
   switch (action.type) {
-    case TYPE.FILTER.TODO : {
+    case TYPE.SHOW.TODO : {
       return {
         finish: action.payload.finish,
         unfinish: action.payload.unfinish
       }
     }
     default: {
-      return filter
+      return showTodo
     }
   }
 }

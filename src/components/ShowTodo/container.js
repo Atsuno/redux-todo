@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
-import { filterTodo } from '../../actions/filter'
+import { showItem } from '../../actions/showTodo'
 import ShowTodo from './component'
 
-const mapDispatchToProps = { filterTodo }
+const mapDispatchToProps = { showItem }
 
 export default connect(null, mapDispatchToProps)(ShowTodo)
